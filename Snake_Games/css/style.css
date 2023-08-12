@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/Sapp.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    border:  10px solid  rgb(219, 219, 35);
+    padding: 10px;
+    border-style:outset ;
+    background-color: rgb(77, 77, 53);
+   
+
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(209, 200, 200);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#hiscoreBox{
+    border:  8px solid  rgb(219, 219, 35);
+    padding: 10;
+   
+    border-style:outset ;
+    background-color: rgb(77, 77, 53);
+   
+
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    font-size: 30px;
+    font-style: italic ;
+    font-weight: lighter;
+    
+    
+    color: rgb(219, 209, 209);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#board{
+    background: linear-gradient(rgb(138, 163, 138), rgb(167, 167, 29));
+    width: 90vmin;
+    height: 92vmin;
+    border: 9px solid rgb(69, 87, 52);
+    border-style:dashed ;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(233, 60, 60), rgb(236, 236, 6));
+    border: 2px solid rgb(26, 1, 26); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: rgb(34, 4, 34);
+    border: .25vmin solid rgb(236, 17, 17);
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(rgb(223, 15, 43), rgb(42, 124, 79));
+    border: .25vmin solid rgb(6, 119, 63);
+    border-radius: 8px;
+}
